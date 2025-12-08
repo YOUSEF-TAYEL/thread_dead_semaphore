@@ -29,35 +29,3 @@ b.start()
 
 
 
-
-
-
-# import threading
-# import time
-
-# resource_1 = threading.Lock()
-# resource_2 = threading.Lock()
-
-
-# def thread_1():
-#     with resource_1:
-#         print("t1 acc r1")
-#         time.sleep(2)
-#         print("t1 waiting r2")
-#     with resource_2:
-#         print("t1 acc r2 complete")
-        
-# def thread_2():
-#     with resource_2:
-#         print("t2 acc r2")
-#         time.sleep(2)
-#         print("t2 waiting r1")
-#         with resource_1:
-#             print("t2 acc r1 complete")
-
-
-# a = threading.Thread(target=thread_1 )
-# b = threading.Thread(target=thread_2)
-
-# a.start()
-# b.start()
